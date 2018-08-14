@@ -1,0 +1,14 @@
+*
+  margin: 0
+  padding: 0
+  
+body
+  margin: 2em
+  font-family: 'Open Sans', sans-serif
+  line-height: 25px
+  font-size: 14px
+  text-align: center
+
+h1
+  line-height: 2
+
