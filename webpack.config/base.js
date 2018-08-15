@@ -15,11 +15,11 @@ config.HTMLDirs.forEach((page) => {
   const htmlPlugin = new HTMLWebpackPlugin({
     filename: `${page}.html`,
     template: path.resolve(__dirname, `../src/${page}.pug`),
-    chunks: [page, 'vendor', 'styles'],
-    hash: true, // 防止缓存
+    // chunks: [page, 'vendor', 'styles'],
+    // hash: true, // 防止缓存
   })
   HTMLPlugins.push(htmlPlugin);
-  Entries[page] = path.resolve(__dirname, `../src/js/${page}.js`);
+  Entries = path.resolve(__dirname, `../src/app.js`);
 })
 
 module.exports = {

@@ -19,7 +19,7 @@ module.exports = webpackMerge(webpackBase,{
       ['dist/*'],　 //匹配删除的文件
       {
         root: path.resolve(__dirname, '..'),  //webpack.config的地址
-        verbose: true,   //开启在控制台输出信息
+        verbose: false,   //开启在控制台输出信息
         dry: false,   //启用删除文件
         exclude: ['files', 'to', 'ignore'],//排除不删除的目录，主要用于避免删除公用的文件
       }
