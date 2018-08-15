@@ -14,7 +14,7 @@ let Entries = {};
 config.HTMLDirs.forEach((page) => {
   const htmlPlugin = new HTMLWebpackPlugin({
     filename: `${page}.html`,
-    template: path.resolve(__dirname, `../src/${page}.pug`),
+    template: path.resolve(__dirname, `../src/pug/${page}.pug`),
     // chunks: [page, 'vendor', 'styles'],
     // hash: true, // 防止缓存
   })
@@ -126,6 +126,7 @@ module.exports = {
     alias: {
       img: path.join(root, 'src/img'),
       css: path.join(root, 'src/css'),
+      pug: path.join(root, 'src/pug'),
       js: path.join(root, 'src/js'),
       // common: path.join(root, 'src/common'),
       components: path.join(root, 'src/components')
