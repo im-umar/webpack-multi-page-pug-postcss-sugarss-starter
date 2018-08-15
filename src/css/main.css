@@ -1,5 +1,5 @@
-@import './_root'
-@import './_basic.css'
+@import '_vars'
+@import '_basic'
 
 
 body
@@ -14,15 +14,15 @@ body
     font-size: 16px
 
 body.home-page
-  background-color: #b4d455
+  background-color: $home-page-color
   color: white
 
 body.details-page
-  background-color: var(--color-purple)
-  color: var(--color-yellow)
+  background-color: $color-purple
+  color: $color-yellow
   ul
     list-style-type: none
   
 body.contact-page
-  background-color: pink
+  background-color: $color-pink
   color: white
