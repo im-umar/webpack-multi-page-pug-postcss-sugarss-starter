@@ -1,0 +1,24 @@
+body
+  img
+    display: block
+    margin: 0 auto
+    margin-bottom: 15px
+  a
+    margin: 10px
+    text-decoration: none
+    color: white
+    font-size: 16px
+
+body.home-page
+  background-color: $home-page-color
+  color: white
+
+body.details-page
+  background-color: $color-purple
+  color: $color-yellow
+  ul
+    list-style-type: none
+  
+body.contact-page
+  background-color: $color-pink
+  color: white
